@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Punch-Out Doom for Switch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<video autoplay muted loop id="myVideo">
+  <source src="video/hellbg900.mp4" type="video/mp4">
+</video>
+
+<div class="maintitle"> 
+<img class="punchOutTitle" src="images/gzPunchoutTitle.png">
+<img style="display:none;" class="punchOutTitle2" src="images/gzPunchoutTitleG.png">
+<img class="boxingRing" src="images/BoxingRingBnW.png">
+<img class="gzlogo" src="images/gzdoom.png">
+</div>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+
+  <h1>Punch-Out Doom for the Nintendo Switch</h1>
+ 
+  <p class="punchtextsub">Zip package includes GZDoom files, an NSP forwarder to be installed and a ReadMe file.</p><p class="punchtextsub">Please note that not everything has carried over to GZDoom at this time but it is still good fun.</p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+ <a href="https://drive.google.com/file/d/1G3YzMBrbIkOMG__dH5JUAnN6LVGGOkov/view" target="_blank"><button id="myBtn1" onclick="myFunction()"><img class="switchicon" src="images/SwitchIcon.png">Download</button></a>
+ 
+  <p class="punchtextsub2">&nbsp; a  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; release.</p> <span class="d0ng3r-font">D0ng3r</span>
+   <button id="myBtn2" onclick="openModal();currentSlide(1)"><img style="margin-left: -42px; height: 18px; margin-top: 2px;" class="switchicon" src="images/ScreenshotsIcon.png">Screenshots</button>
+</div>
+
+<div class="Macworks">
+<img class="movGrass" src="images/MidgroundGrass.gif">
+<img class="movSidewalk" src="images/Sidewalk.gif">
+<img class="movMacruns" src="images/LilMacRuns.gif">
+<img class="movBike" src="images/LuisCycles.gif">
+
+</div>
+
+<div id="sideOptions" class="sidebar">
+
+<div id="selOne" class="btnContainer">
+<span style="
+    position: absolute;
+    z-index: 2;
+    top: 4px;
+    
+    left: 8px;
+">Derrick Davison</span>
+<img src="images/IllDadLogo.png">
+
+ <!--<button id="myBtn">Open Modal</button>-->
+</div>
+
+<div class="btnContainer">
+<a href="https://github.com/fgsfdsfgs/gzdoom"; target="_blank";><span style="position: absolute; z-index: 3; top: 4px; left: 8px;">Switch GZdoom</span><img style="
+    top: -42px;
+    z-index: 0;
+    left: -33px;
+    height: 100px;
+    overflow: hidden;
+" src="images/Circle_gzdoom.png"></a>
+
+</div>
+
+<div class="btnContainer">
+<a href="https://bio.site/D0ng3r"; target="_blank";><span style="position: absolute; z-index: 2; top: 4px; left: 8px;">Other Projects</span><img src="images/D0ng3rSmall.png"></a>
+
+</div>
+
+</div>
+
+
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+	<p style="margin-top: 181px;"><a href="https://www.youtube.com/@illuminatidad"; target="_blank";><img src="images/YouTubeLogo.png">YouTube - @illuminatidad</a></p>
+    <p><a href="https://www.moddb.com/company/derrick-davison/"; target="_blank";><img src="images/ModDBLogo.png">ModDB - Derrick Davison</a></p>
+	<p><a href="https://store.steampowered.com/search/?publisher=Derrick%20Davison"; target="_blank";><img src="images/steamLogo.png">Steam - Davison Games</a></p>
+	<p><a href="https://assetstore.unity.com/publishers/106044"; target="_blank";><img src="images/unityLogo.png">Unity Asset Store - Davison Games</a></p>
+	<p><a href="https://gamejolt.com/@DerrickDavison"; target="_blank";><img src="images/GameJoltLogo.png">GameJolt - @DerrickDavison</a></p>
+	<p><a href="https://sites.google.com/smiteworks.com/davison-games/home"; target="_blank";><img src="images/googleSitesLogo.png">Google Sites - Davison Games</a></p>
+	  <div class="illDadCredLogo"><span class="illDadH1">Punch-Out Doom for PC developed by</span><img src="images/IllDadCred.png"><br><span class="illDadH2">Check out some of his great work at the links below and download the <a href="https://gamejolt.com/games/PunchoutDoommod/477263"; target="_blank";>Punch-Out mod for ZDoom here!</a></span></div> 	
+  </div>
+
+</div>
+
+
+
+
+
+<div class="screens">
+<div id="imgModal" class="screensmodal">
+  <span class="screensclose sreenscursor" onclick="closeModal()">&times;</span>
+  <div class="screensmodal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./Screenshots/News2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./Screenshots/homescreen2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./Screenshots/kinghippo.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./Screenshots/tkoTiger.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo screenscursor" src="./Screenshots/News2.png" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo screenscursor" src="./Screenshots/homescreen2.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo screenscursor" src="./Screenshots/kinghippo.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo screenscursor" src="./Screenshots/tkoTiger.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+  </div>
+</div>
+</div>
+<script src="./script.js"></script>
+
+
+
+</body>
+</html>
